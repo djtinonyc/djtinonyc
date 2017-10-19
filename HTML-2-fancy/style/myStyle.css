@@ -1,0 +1,147 @@
+/*general stuff*/
+
+body, html {
+	/*font: Georgia, serif 15px;*/
+
+	font: 400 15px/1.8 "Lato", Impact;
+	background-color: black;
+	color: rgb(50,5,15);
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	/*position: relative;
+	height: auto;
+	min-height: 100%;*/
+}
+
+h1 {
+	color: white;
+
+}
+
+h2 {
+	font-family: Helvetica;
+	font-style: bold ;
+	color: black;
+}
+
+h3 {
+	font-family: Helvetica;
+	color: #1E90FF;
+}
+audio {
+	width: 100%;
+}
+
+/*The following are section IDs
+you can only have one of each per page*/
+
+#titleBar {
+	font-size: 25px;
+	background-color: black;
+	height: 100px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+
+}
+
+#titleBar p {
+	color: white;
+	position: fixed;
+}
+
+#content {
+	margin-top: 100px;
+}
+
+
+/* these are "classes". You can use them over and over. 
+This one is used to separate two sections */
+
+.blockout {
+	background-color: DarkRed;
+	height:100px;
+	width: 100%;
+	display: inline-block;
+}
+
+/*Parallax effect*/
+.parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
+	color: white;
+	padding: 0px 50;
+/*	This ensures the sections don't have space between*/
+	display: inline-block;
+	/* Set a specific height */
+/*    height: 100%;
+*//*    position: fixed; 
+*/
+	height: inherit;
+/*	display:block;*/
+	overflow:auto;
+
+	opacity: 0.75;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.parallax1 { 
+    /* The image used */
+}
+
+.parallax2 { 
+    background-image: url("../images/tino.jpg");
+}
+
+.parallax3 { 
+}
+
+.parallax4 { 
+    background-image: url("../images/NEVE2.jpg");
+
+}
+
+/*Here's a sample element with a border*/
+.myFirstSection {
+	width: 300px;
+	background-color: red;
+	border: 2px solid black;
+	padding: 5px;
+}
+
+/*This section has an image as a background.*/
+
+#myBackgroundImageSection {
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	width: 400px;
+	background-image: url(../images/photo.jpg);
+	background-size: cover%;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
